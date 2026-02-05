@@ -14,7 +14,7 @@ ARQUIVO_NCM_REF = "Tabela_NCM_Vigente.xlsx"      # Tabela oficial da Receita
 ARQUIVO_SAIDA = "Planilha_NCM_Final.xlsx" 
 ARQUIVO_PENDENCIAS = "Produtos_Sem_NCM.xlsx"
 
-API_KEY = "AIzaSyD2w95RcT61HaOZt83fpWlhTOxeRBO5Qno"
+API_KEY = os.environ.get("API_KEY")
 MODEL_NAME = "gemini-2.0-flash"
 
 client = genai.Client(api_key=API_KEY)
